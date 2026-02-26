@@ -1,17 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FreeTypeSharp" Version="3.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\freetypesharpv\FreeTypeSharp\FreeTypeSharp.csproj" />
     <ProjectReference Include="..\FontStashSharp.Base\FontStashSharp.Base.csproj" />
   </ItemGroup>
-
-  <PropertyGroup Condition="'$(Configuration)'=='Release'">
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>   
 </Project>

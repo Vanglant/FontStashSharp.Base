@@ -3,10 +3,6 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)'=='Release'">
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="StbTrueTypeSharp" Version="1.26.12" />
   </ItemGroup>
